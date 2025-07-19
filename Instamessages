@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+  <title>InstaMessages</title>
+  <style>
+    html, body, iframe { margin:0; padding:0; width:100%; height:100%; border:none; }
+    iframe { display:block; }
+    /* Cache tout sauf la messagerie */
+    header, nav, [role="presentation"],
+    a[href*="/explore"], a[href*="/reels"],
+    [href="/stories"] { display:none !important; }
+    /* Assure que l'iframe prend tout l'espace */
+    body { overflow:hidden; }
+  </style>
+</head>
+<body>
+  <iframe src="https://www.instagram.com/direct/inbox/" allow="camera; microphone"></iframe>
+</body>
+</html>
